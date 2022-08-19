@@ -21,7 +21,7 @@ Console.Write (result);
 452 -> 11
 82 -> 10
 9012 -> 12
-*/
+
 
 Console.Write("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -34,6 +34,20 @@ while (number > 0)
 }
 Console.Write($"Сумма всех цифр в числе - {sum}");
 
+
+Напишите программу, которая задаёт массив из 8 элементов
+ и выводит их на экран.
+
+1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+6, 1, 33 -> [6, 1, 33]
+*/
+
+ int [] array = new int [8];
+ for (int i = 0; i < array.Length; i++)
+ {
+    array[i] = new Random().Next();
+ }
+ Console.WriteLine($"Массив: [{String.Join(",",array)}]");
 
 
 
